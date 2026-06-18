@@ -54,4 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("resEmail").textContent = params.get("email") || "";
     document.getElementById("resCelular").textContent = params.get("celular") || "";
     document.getElementById("resDtNasc").textContent = params.get("dt_nasc") || "";
+    document.getElementById("resEndereco").textContent = params.get("endereco") || "";
+    document.getElementById("resCidade").textContent = params.get("cidade") || "";
+    document.getElementById("resEstado").textContent = params.get("estado") || "";
 });
