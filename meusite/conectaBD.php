@@ -12,7 +12,6 @@
     if ($conn->connect_error) {
         die("Falha na conexão: " . $conn->connect_error);
     } else {
-        // Opcional: mensagem de sucesso (remova em produção)
-        // echo "Conectado com sucesso!";
+        echo "Conectado com sucesso!";
     }
 ?>
