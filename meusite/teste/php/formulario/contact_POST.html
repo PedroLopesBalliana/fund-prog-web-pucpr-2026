@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Loja de Livros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu lateral -->
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a class="active" href="contact_POST.html">Cadastro</a>
+        <a href="about.html">Sobre</a>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <h2 class="titleTop">Loja de Livros</h2>
+        <h3 class="titleBottom">Deixe o seu Contato!</h3>
+
+        <div class="contact-form">
+            <form method="POST" action="contact_actionPOST.php" >
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Seu Nome" required>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Seu Email" required>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="celular">Celular:</label>
+                    <input type="tel" name="celular" id="celular" 
+                           pattern="\(\d{2}\)\s\d{4,5}-\d{4}$" 
+                           placeholder="(xx) xxxxx-xxxx" 
+                           title="(xx) xxxxx-xxxx" required>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="dt_nasc">Data de Nascimento:</label>
+                    <input type="date" name="dt_nasc" id="dt_nasc" required>
+                </div><br>
+
+                <div class="form-group">
+                    <label>Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Seu Endereço" required>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Sua Cidade" required>
+                </div><br>
+
+                <div class="form-group">
+                    <label>Estado:</label>
+                    <select name="estado" id="estado" required>
+                        <option value="">Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div><br>
+
+                <div class="form-group">
+                    <input type="checkbox" name="agree-term" id="agree-term" required>
+                    <label for="agree-term">Eu concordo com os <a href="#">termos de serviço</a></label>
+                </div><br>
+
+                <div class="form-group form-button">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Referência ao arquivo Javascript -->
+    <script src="js/formValidation.js"></script>
+</body>
+</html>
+
